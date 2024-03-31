@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Uday's Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+
+    <style>
+        *{
+            font-family: "Dosis", sans-serif;
+        }
+        .dosis {
+            font-family: "Dosis", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        body {
+            padding: 75px 30px 300px 30px;
+            background-color: #DFF5FF;
+        }
+
+        .rubik-scribble-regular {
+            font-family: "Rubik Scribble", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        a {
+            /* margin: 50px; */
+            color: black;
+            margin-right: 75px;
+            text-decoration: none;
+        }
+
+        #nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: #67C6E3;
+            
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+        }
+
+        #card1{
+            border: 2px solid black;
+            border-radius: 30px;
+            height: 200px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 50px;
+            font-size: 1.5rem;
+            background-image: url(htmlcard.png);
+            
+            background-position-y: -500px;
+            background-position-x: 200px;
+            cursor: pointer;
+            box-shadow:  0 0 5px;
+            
+        }
+        #card1:hover{
+            scale: 1.02;
+            box-shadow:  0 0 10px;
+        }
+        #card2{
+            border: 2px solid black;
+            border-radius: 30px;
+            height: 200px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-top: 50px;
+            font-size: 1.5rem;
+            background-image: url(js-banner2_XymzsUg.png);
+            background-size: 10rem;
+            background-position-y: -20px;
+            cursor: pointer;
+            box-shadow:  0 0 5px;
+            
+        }
+        #card2:hover{
+            scale: 1.02;
+            box-shadow:  0 0 10px;
+            
+        }
+        
+        #card3{
+            border: 2px solid black;
+            border-radius: 30px;
+            height: 200px;
+            width: 50%;
+            margin-top: 50px;
+            font-size: 1.5rem;
+            background-image: url(responsivecard.jpg);
+            background-position-x:-100px ;
+            background-position-y: -70px;
+            cursor: pointer;
+            
+        }
+        #card3:hover{
+            scale: 1.02;
+            box-shadow:  0 0 10px;
+            
+        }
+        </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div style="margin-left: 50px;" onclick="location.href='home.html'">
+            <h1>Uday</h1>
+        </div>
+        <div style="display: flex; margin-top: 5px;">
+            <a href="index.html">
+                <h2>About me</h2>
+            </a>
+            <a href="articlespage.html">
+                <h2>My Articles</h2>
+            </a>
+            <a href="quizzezpage.html">
+                <h2>Quizzes</h2>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="card1" onclick="location.href='article1.html'">
+        <p></p>
+        <a href="article1.html" style="color: aliceblue;"> <br>&nbsp;&nbsp;&nbsp;&nbsp;Article on Introduction to HTML and CSS <br><br></a>
+    </div>
+
+    <div id="card2" onclick="location.href='article2.html'">
+        <p></p>
+        <a href="article1.html" style="color:rgb(red, green, rgb(165, 161, 87));"> <br>&nbsp;&nbsp;&nbsp;&nbsp;Article on Introduction to Javascript<br><br></a>
+    </div>
+
+    <div id="card3" onclick="location.href='article3.html'">
+        <p></p>
+        <a href="article1.html" style="color: aliceblue;"> <br>&nbsp;&nbsp;&nbsp;&nbsp;Responsive Web Design<br><br></a>
+    </div>
+
+</body>
+
+</html>

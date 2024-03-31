@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Introduction to HTML and CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #67C6E3;
+            text-align: center;
+
+        }
+        #subButton{
+            border-radius: 20px;
+            background-color: #5356FF;
+            color: aliceblue;
+            padding: 10px;
+            margin-left: auto ;
+            margin-right: auto ;
+            display: block;
+            font-size: 1.2rem;
+        }
+        
+    </style>
+</head>
+
+<body id="quiz1main">
+    <div id="header">
+        <h1>QUizz TIME</h1>
+    </div>  
+    <h2 style="margin-bottom: 50px;">Introduction to HTML and CSS</h2>
+
+
+    <form id="quiz1">
+        <p>Question 1. What is the correct HTML tag for creating a numbered list?</p>
+        <input type="radio" name="q1_answer" id="q1_option1" value="< list>">
+        <!--may give error in js check it with something other if needed-->
+        <label for="q1_option1">a. &nbsp; < list></label> <br>
+        <input type="radio" name="q1_answer" id="q1_option2" value="< ul>">
+        <label for="q1_option2">b. &nbsp; < ul></label> <br>
+        <input type="radio" name="q1_answer" id="q1_option3" value="< ol>">
+        <label for="q1_option3">c. &nbsp; < ol></label> <br>
+        <input type="radio" name="q1_answer" id="q1_option4" value="< dl>">
+        <label for="q1_option4">d. &nbsp; < dl></label> <br> <br>
+
+        <p>Question 2. Which CSS property is used to specify the font size of text?</p>
+        <input type="radio" name="q2_answer" id="q2_option1" value="font-style">
+        <label for="q2_option1">a. &nbsp; font-style</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option2" value="font-weight">
+        <label for="q2_option2">b. &nbsp; font-weight </label> <br>
+        <input type="radio" name="q2_answer" id="q2_option3" value="font-size">
+        <label for="q2_option3">c. &nbsp; font-size</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option4" value="font-family">
+        <label for="q2_option4">d. &nbsp; font-family</label> <br><br>
+
+        <p>Question 3. What is the purpose of the CSS property "float"?</p>
+        <input type="radio" name="q3_answer" id="q3_option1" value="To align text horizontally within a container">
+        <label for="q3_option1">a. &nbsp; To align text horizontally within a container</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option2"
+            value="To make an element take up the entire width of its container">
+        <label for="q3_option2">b. &nbsp; To make an element take up the entire width of its container</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option3" value="To create a responsive layout">
+        <label for="q3_option3">c. &nbsp; To create a responsive layout</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option4" value="To align elements side by side within a container">
+        <label for="q3_option4">d. &nbsp; To align elements side by side within a container</label> <br> <br>
+
+        <p>Question 4. Which HTML attribute is used to define alternative text for an image?</p>
+        <input type="radio" name="q4_answer" id="q4_option1" value="src">
+        <label for="q4_option1">a. &nbsp; src</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option2" value="alt">
+        <label for="q4_option2">b. &nbsp; alt</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option3" value="title">
+        <label for="q4_option3">c. &nbsp; title</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option4" value="href">
+        <label for="q4_option4">d. &nbsp; href</label> <br><br>
+
+        <p>Question 5. What is the correct way to apply an external CSS file to an HTML document?</p>
+        <input type="radio" name="q5_answer" id="q5_option1" value="< style src='styles.css'>"> <!-- again-->
+        <label for="q5_option1">a. &nbsp; < styl src="styles.css "> </label> <br>
+        <input type="radio" name="q5_answer" id="q5_option2" value='< link rel="stylesheet" href="styles.css">'>
+        <label for="q5_option2">b. &nbsp; < link rel="stylesheet" href="styles.css"></label> <br>
+        <input type="radio" name="q5_answer" id="q5_option3" value="< style href='styles.css'>">
+        <label for="q5_option3">c. &nbsp; style href="styles.css"> </label> <br>
+        <input type="radio" name="q5_answer" id="q5_option4" value="< link src='styles.css'>">
+        <label for="q5_option4">d. &nbsp; < link src="styles.css"></label> <br><br>
+
+        <p>Question 6. In CSS, what does the "display: inline-block" property do?</p>
+        <input type="radio" name="q6_answer" id="q6_option1" value="It displays an element as a block-level element">
+        <label for="q6_option1">a. &nbsp; It displays an element as a block-level element</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option2" value="It displays an element as an inline-level element">
+        <label for="q6_option2">b. &nbsp; It displays an element as an inline-level element</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option3" value="It displays an element as a grid">
+        <label for="q6_option3">c. &nbsp; It displays an element as a grid</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option4"
+            value="It displays an element as an inline-level block container">
+        <label for="q6_option4">d. &nbsp; It displays an element as an inline-level block container</label> <br><br>
+
+        <p>Question 7. What is the purpose of the CSS property "margin"?</p>
+        <input type="radio" name="q7_answer" id="q7_option1" value="To add space inside an element">
+        <label for="q7_option1">a. &nbsp; To add space inside an element</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option2" value="To add space between elements">
+        <label for="q7_option2">b. &nbsp; To add space between elements</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option3" value="To add space outside an element">
+        <label for="q7_option3">c. &nbsp; To add space outside an element</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option4" value="To add space around the border of an element">
+        <label for="q7_option4">d. &nbsp; To add space around the border of an element</label> <br><br>
+
+        <p>Question 8. Which HTML element is used to define a hyperlink?</p>
+        <input type="radio" name="q8_answer" id="q8_option1" value="< hyperlink>">
+        <label for="q8_option1">a. &nbsp; < hyperlink></label> <br>
+        <input type="radio" name="q8_answer" id="q8_option2" value="< a>">
+        <label for="q8_option2">b. &nbsp; < a></label> <br>
+        <input type="radio" name="q8_answer" id="q8_option3" value="< link> ">
+        <label for="q8_option3">c. &nbsp; < link> </label> <br>
+        <input type="radio" name="q8_answer" id="q8_option4" value="< href>">
+        <label for="q8_option4">d. &nbsp; < href></label> <br><br>
+
+        <p>Question 9. How do you comment out multiple lines of code in CSS?</p>
+        <input type="radio" name="q9_answer" id="q9_option1" value="/* This is a comment */">
+        <label for="q9_option1">a. &nbsp; /* This is a comment */</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option2" value="< !-- This is a comment -->">
+        <label for="q9_option2">b. &nbsp; < !-- This is a comment --></label> <br>
+        <input type="radio" name="q9_answer" id="q9_option3" value="// This is a comment">
+        <label for="q9_option3">c. &nbsp; // This is a comment</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option4" value="/** This is a comment **/">
+        <label for="q9_option4">d. &nbsp; /** This is a comment **/</label> <br><br>
+
+        <p>Question 10. Which CSS selector would target all elements with a class of "intro"?</p>
+        <input type="radio" name="q10_answer" id="q10_option1" value="p.intro">
+        <label for="q10_option1">a. &nbsp; p.intro</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option2" value=".p.intro">
+        <label for="q10_option2">b. &nbsp; .p.intro</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option3" value="#p.intro">
+        <label for="q10_option3">c. &nbsp; #p.intro</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option4" value="p#intro">
+        <label for="q10_option4">d. &nbsp; p#intro</label> <br>
+
+        <br><br><br>
+        <button type="submit" id="subButton">Check Answers</button>
+
+
+    </form>
+
+    <script>
+        document.getElementById('quiz1').addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var main = document.getElementById('quiz1main');
+
+            var q1_selectedOption = document.querySelector('input[name="q1_answer"]:checked');
+            var q2_selectedOption = document.querySelector('input[name="q2_answer"]:checked');
+            var q3_selectedOption = document.querySelector('input[name="q3_answer"]:checked');
+            var q4_selectedOption = document.querySelector('input[name="q4_answer"]:checked');
+            var q5_selectedOption = document.querySelector('input[name="q5_answer"]:checked');
+            var q6_selectedOption = document.querySelector('input[name="q6_answer"]:checked');
+            var q7_selectedOption = document.querySelector('input[name="q7_answer"]:checked');
+            var q8_selectedOption = document.querySelector('input[name="q8_answer"]:checked');
+            var q9_selectedOption = document.querySelector('input[name="q9_answer"]:checked');
+            var q10_selectedOption = document.querySelector('input[name="q10_answer"]:checked');
+
+            if (q1_selectedOption && q2_selectedOption && q3_selectedOption && q4_selectedOption && q5_selectedOption && q6_selectedOption && q7_selectedOption && q8_selectedOption && q9_selectedOption && q10_selectedOption) {
+                var q1_answer = q1_selectedOption.value;
+                var q2_answer = q2_selectedOption.value;
+                var q3_answer = q3_selectedOption.value;
+                var q4_answer = q4_selectedOption.value;
+                var q5_answer = q5_selectedOption.value;
+                var q6_answer = q6_selectedOption.value;
+                var q7_answer = q7_selectedOption.value;
+                var q8_answer = q8_selectedOption.value;
+                var q9_answer = q9_selectedOption.value;
+                var q10_answer = q10_selectedOption.value;
+
+                var correctAnswers = 0;
+
+                if (q1_answer === "< ol>") {
+                    correctAnswers++;
+                }
+                if (q2_answer === "font-size") {
+                    correctAnswers++;
+                }
+                if (q3_answer === "To align elements side by side within a container") {
+                    correctAnswers++;
+                }
+                if (q4_answer === "alt") {
+                    correctAnswers++;
+                }
+                if (q5_answer === '< link rel="stylesheet" href="styles.css">') {
+                    correctAnswers++;
+                }
+                if (q6_answer === "It displays an element as an inline-level block container") {
+                    correctAnswers++;
+                }
+                if (q7_answer === "To add space outside an element") {
+                    correctAnswers++;
+                }
+                if (q8_answer === "< a>") {
+                    correctAnswers++;
+                }
+                if (q9_answer === "/* This is a comment */") {
+                    correctAnswers++;
+                }
+                if (q10_answer === "p.intro") {
+                    correctAnswers++;
+                }
+
+                var message = "<h1>Correct Answers:</h1> <br>";
+                message += "1. What is the correct HTML tag for creating a numbered list? -  <br> &emsp; Your Answer: " + q1_answer + " <br> &emsp; Correct Answer: < ol><br><br>";
+                message += "2. Which CSS property is used to specify the font size of text? -  <br> &emsp; Your Answer: " + q2_answer + " <br> &emsp; Correct Answer: font-size<br><br>";
+                message += "3. What is the purpose of the CSS property 'float'? -  <br> &emsp; Your Answer: " + q3_answer + " <br> &emsp; Correct Answer: To align elements side by side within a container<br><br>";
+                message += "4. Which HTML attribute is used to define alternative text for an image? -  <br> &emsp; Your Answer: " + q4_answer + " <br> &emsp; Correct Answer: alt<br><br>";
+                message += "5. What is the correct way to apply an external CSS file to an HTML document? -  <br> &emsp; Your Answer: " + q5_answer + " <br> &emsp; Correct Answer: < link rel='stylesheet' href='styles.css'><br><br>";
+                message += "6. In CSS, what does the 'display: inline-block' property do? -  <br> &emsp; Your Answer: " + q6_answer + " <br> &emsp; Correct Answer: It displays an element as an inline-level block container<br><br>";
+                message += "7. What is the purpose of the CSS property 'margin'? -  <br> &emsp; Your Answer: " + q7_answer + " <br> &emsp; Correct Answer: To add space outside an element<br><br>";
+                message += "8. Which HTML element is used to define a hyperlink? -  <br> &emsp; Your Answer: " + q8_answer + " <br> &emsp; Correct Answer: < a><br><br>";
+                message += "9. How do you comment out multiple lines of code in CSS? -  <br> &emsp; Your Answer: " + q9_answer + " <br> &emsp; Correct Answer: /* This is a comment */<br><br>";
+                message += "10. Which CSS selector would target all elements with a class of 'intro'? -  <br> &emsp; Your Answer: " + q10_answer + " <br> &emsp; Correct Answer: p.intro<br><br>";
+                message += "<br>Your Score: " + correctAnswers + "/10";
+
+                main.innerHTML = (message);
+
+            } else {
+                alert("Please answer all questions!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

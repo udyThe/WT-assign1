@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Responsive Web Design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #67C6E3;
+            text-align: center;
+
+        }
+
+        #subButton {
+            border-radius: 20px;
+            background-color: #5356FF;
+            color: aliceblue;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body id="quiz1main">
+    <div id="header">
+        <h1>QUizz TIME</h1>
+    </div>
+    <h2 style="margin-bottom: 50px;">Responsive Web Design</h2>
+    <form id="quiz1">
+        <p>Question 1. What is the primary goal of responsive web design?</p>
+        <input type="radio" name="q1_answer" id="q1_option1" value="Maximizing page load speed">
+        <label for="q1_option1">a. &nbsp; Maximizing page load speed</label> <br>
+        <input type="radio" name="q1_answer" id="q1_option2" value="Adapting the layout and content to different devices">
+        <label for="q1_option2">b. &nbsp; Adapting the layout and content to different devices</label> <br>
+        <input type="radio" name="q1_answer" id="q1_option3" value="Enhancing website security">
+        <label for="q1_option3">c. &nbsp; Enhancing website security</label> <br>
+        <input type="radio" name="q1_answer" id="q1_option4" value="Improving server performance">
+        <label for="q1_option4">d. &nbsp; Improving server performance</label> <br> <br>
+
+        <p>Question 2. Which CSS technique is commonly used to ensure that images scale proportionally on smaller screens?</p>
+        <input type="radio" name="q2_answer" id="q2_option1" value="max-width: 100%">
+        <label for="q2_option1">a. &nbsp; max-width: 100%</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option2" value="width: auto">
+        <label for="q2_option2">b. &nbsp; width: auto</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option3" value="height: 100%">
+        <label for="q2_option3">c. &nbsp; height: 100%</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option4" value="flex: 1">
+        <label for="q2_option4">d. &nbsp; flex: 1</label> <br><br>
+
+        <p>Question 3. What are media queries used for in responsive web design?</p>
+        <input type="radio" name="q3_answer" id="q3_option1" value="Defining HTML structure">
+        <label for="q3_option1">a. &nbsp; Defining HTML structure</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option2"value="Adding interactivity to web pages">
+        <label for="q3_option2">b. &nbsp; Adding interactivity to web pages</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option3" value="Applying styles based on device characteristics">
+        <label for="q3_option3">c. &nbsp; Applying styles based on device characteristics</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option4" value="Embedding multimedia content">
+        <label for="q3_option4">d. &nbsp; Embedding multimedia content</label> <br> <br>
+
+        <p>Question 4. What is the purpose of the viewport meta tag in HTML?</p>
+        <input type="radio" name="q4_answer" id="q4_option1" value="Controlling the behavior of a web page on mobile devices">
+        <label for="q4_option1">a. &nbsp; Controlling the behavior of a web page on mobile devices</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option2" value="Defining the content of the web page">
+        <label for="q4_option2">b. &nbsp; Defining the content of the web page</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option3" value="Specifying the character encoding of the document">
+        <label for="q4_option3">c. &nbsp; Specifying the character encoding of the document</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option4" value="Adding custom fonts to the web page">
+        <label for="q4_option4">d. &nbsp; Adding custom fonts to the web page</label> <br><br>
+
+        <p>Question 5. Which principle of responsive web design involves starting with a basic layout that works on all devices and progressively enhancing it for larger screens?</p>
+        <input type="radio" name="q5_answer" id="q5_option1" value="Mobile-first design"> 
+        <label for="q5_option1">a. &nbsp; Mobile-first design</label> <br>
+        <input type="radio" name="q5_answer" id="q5_option2" value='Progressive enhancement'>
+        <label for="q5_option2">b. &nbsp;  Progressive enhancement</label> <br>
+        <input type="radio" name="q5_answer" id="q5_option3" value="Graceful degradation">
+        <label for="q5_option3">c. &nbsp; Graceful degradation </label> <br>
+        <input type="radio" name="q5_answer" id="q5_option4" value="Adaptive design">
+        <label for="q5_option4">d. &nbsp; Adaptive design</label> <br><br>
+
+        <p>Question 6. What is the benefit of using a fluid grid layout in responsive web design?</p>
+        <input type="radio" name="q6_answer" id="q6_option1" value="It allows for precise control over element positioning">
+        <label for="q6_option1">a. &nbsp;  It allows for precise control over element positioning</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option2" value="It ensures that images maintain their original aspect ratio">
+        <label for="q6_option2">b. &nbsp; It ensures that images maintain their original aspect ratio</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option3" value="It enables elements to resize proportionally based on viewport width">
+        <label for="q6_option3">c. &nbsp;  It enables elements to resize proportionally based on viewport width</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option4"value="It prevents text from wrapping on smaller screens">
+        <label for="q6_option4">d. &nbsp; It prevents text from wrapping on smaller screens</label> <br><br>
+
+        <p>Question 7. How does responsive web design contribute to better SEO performance?</p>
+        <input type="radio" name="q7_answer" id="q7_option1" value="By reducing page load times">
+        <label for="q7_option1">a. &nbsp; By reducing page load times</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option2" value="By optimizing images for search engines">
+        <label for="q7_option2">b. &nbsp; By optimizing images for search engines</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option3" value="By improving mobile-friendliness">
+        <label for="q7_option3">c. &nbsp; By improving mobile-friendliness</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option4" value="By increasing server uptime">
+        <label for="q7_option4">d. &nbsp; By increasing server uptime</label> <br><br>
+
+        <p>Question 8. Which CSS property is commonly used to apply different styles based on device characteristics?</p>
+        <input type="radio" name="q8_answer" id="q8_option1" value="display">
+        <label for="q8_option1">a. &nbsp; display</label> <br>
+        <input type="radio" name="q8_answer" id="q8_option2" value="position">
+        <label for="q8_option2">b. &nbsp; Cposition</label> <br>
+        <input type="radio" name="q8_answer" id="q8_option3" value="background-color">
+        <label for="q8_option3">c. &nbsp; background-color </label> <br>
+        <input type="radio" name="q8_answer" id="q8_option4" value="@media">
+        <label for="q8_option4">d. &nbsp; @media</label> <br><br>
+
+        <p>Question 9. Which technique allows developers to progressively enhance a basic layout for larger screens?</p>
+        <input type="radio" name="q9_answer" id="q9_option1" value="Progressive enhancement">
+        <label for="q9_option1">a. &nbsp; Progressive enhancement</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option2" value="Adaptive design">
+        <label for="q9_option2">b. &nbsp; Adaptive design</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option3" value="Graceful degradation">
+        <label for="q9_option3">c. &nbsp; Graceful degradation</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option4" value="Mobile-first design">
+        <label for="q9_option4">d. &nbsp; Mobile-first design</label> <br><br>
+
+        <p>Question 10. What is the purpose of the "max-width: 100%" CSS rule for images in responsive web design?</p>
+        <input type="radio" name="q10_answer" id="q10_option1" value="To prevent images from resizing on smaller screens">
+        <label for="q10_option1">a. &nbsp; To prevent images from resizing on smaller screens</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option2" value="To ensure that images maintain their original dimensions">
+        <label for="q10_option2">b. &nbsp; To ensure that images maintain their original dimensions</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option3" value="To scale images proportionally to fit their container">
+        <label for="q10_option3">c. &nbsp; To scale images proportionally to fit their container</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option4" value="To hide images on smaller screens">
+        <label for="q10_option4">d. &nbsp; To hide images on smaller screens</label> <br>
+
+        <br><br><br>
+        <button type="submit" id="subButton">Check Answers</button>
+
+
+    </form>
+
+    <script>
+        document.getElementById('quiz1').addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var main = document.getElementById('quiz1main');
+
+            var q1_selectedOption = document.querySelector('input[name="q1_answer"]:checked');
+            var q2_selectedOption = document.querySelector('input[name="q2_answer"]:checked');
+            var q3_selectedOption = document.querySelector('input[name="q3_answer"]:checked');
+            var q4_selectedOption = document.querySelector('input[name="q4_answer"]:checked');
+            var q5_selectedOption = document.querySelector('input[name="q5_answer"]:checked');
+            var q6_selectedOption = document.querySelector('input[name="q6_answer"]:checked');
+            var q7_selectedOption = document.querySelector('input[name="q7_answer"]:checked');
+            var q8_selectedOption = document.querySelector('input[name="q8_answer"]:checked');
+            var q9_selectedOption = document.querySelector('input[name="q9_answer"]:checked');
+            var q10_selectedOption = document.querySelector('input[name="q10_answer"]:checked');
+
+            if (q1_selectedOption && q2_selectedOption && q3_selectedOption && q4_selectedOption && q5_selectedOption && q6_selectedOption && q7_selectedOption && q8_selectedOption && q9_selectedOption && q10_selectedOption) {
+                var q1_answer = q1_selectedOption.value;
+                var q2_answer = q2_selectedOption.value;
+                var q3_answer = q3_selectedOption.value;
+                var q4_answer = q4_selectedOption.value;
+                var q5_answer = q5_selectedOption.value;
+                var q6_answer = q6_selectedOption.value;
+                var q7_answer = q7_selectedOption.value;
+                var q8_answer = q8_selectedOption.value;
+                var q9_answer = q9_selectedOption.value;
+                var q10_answer = q10_selectedOption.value;
+
+                var correctAnswers = 0;
+
+                if (q1_answer === "Adapting the layout and content to different devices") {
+                    correctAnswers++;
+                }
+                if (q2_answer === "max-width: 100%") {
+                    correctAnswers++;
+                }
+                if (q3_answer === "Applying styles based on device characteristics") {
+                    correctAnswers++;
+                }
+                if (q4_answer === "Controlling the behavior of a web page on mobile devices") {
+                    correctAnswers++;
+                }
+                if (q5_answer === 'Progressive enhancement') {
+                    correctAnswers++;
+                }
+                if (q6_answer === "It enables elements to resize proportionally based on viewport width") {
+                    correctAnswers++;
+                }
+                if (q7_answer === "By improving mobile-friendliness") {
+                    correctAnswers++;
+                }
+                if (q8_answer === "@media") {
+                    correctAnswers++;
+                }
+                if (q9_answer === "Progressive enhancement") {
+                    correctAnswers++;
+                }
+                if (q10_answer === "To scale images proportionally to fit their container") {
+                    correctAnswers++;
+                }
+
+                var message = "<h1>Correct Answers:</h1> <br>";
+                message += "1. What is the correct HTML tag for creating a numbered list? -  <br>&emsp; Your Answer: " + q1_answer + " <br> &emsp; Correct Answer: Adapting the layout and content to different devices<br><br>";
+                message += "2. Which CSS property is used to specify the font size of text? -  <br>&emsp; Your Answer: " + q2_answer + " <br> &emsp; Correct Answer: max-width: 100%<br><br>";
+                message += "3. What is the purpose of the CSS property 'float'? -  <br>&emsp; Your Answer: " + q3_answer + " <br> &emsp; Correct Answer: Applying styles based on device characteristics<br><br>";
+                message += "4. Which HTML attribute is used to define alternative text for an image? -  <br>&emsp; Your Answer: " + q4_answer + " <br> &emsp; Correct Answer: Controlling the behavior of a web page on mobile devices<br><br>";
+                message += "5. What is the correct way to apply an external CSS file to an HTML document? -  <br>&emsp; Your Answer: " + q5_answer + " <br> &emsp; Correct Answer: Progressive enhancement<br><br>";
+                message += "6. In CSS, what does the 'display: inline-block' property do? -  <br>&emsp; Your Answer: " + q6_answer + " <br> &emsp; Correct Answer: It enables elements to resize proportionally based on viewport width<br><br>";
+                message += "7. What is the purpose of the CSS property 'margin'? -  <br>&emsp; Your Answer: " + q7_answer + " <br> &emsp; Correct Answer: By improving mobile-friendliness<br><br>";
+                message += "8. Which HTML element is used to define a hyperlink? -  <br>&emsp; Your Answer: " + q8_answer + " <br> &emsp; Correct Answer: @media<br><br>";
+                message += "9. How do you comment out multiple lines of code in CSS? -  <br>&emsp; Your Answer: " + q9_answer + " <br> &emsp; Correct Answer: Progressive enhancement<br><br>";
+                message += "10. Which CSS selector would target all elements with a class of 'intro'? -  <br> &emsp;Your Answer: " + q10_answer + " <br> &emsp; Correct Answer: To scale images proportionally to fit their container<br><br>";
+                message += "<br>Your Score: " + correctAnswers + "/10";
+
+                main.innerHTML = (message);
+
+            } else {
+                alert("Please answer all questions!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

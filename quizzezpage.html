@@ -1,0 +1,85 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzes Here!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Scribble&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+
+    <style>
+        /* Additional styling for logos and anchors */
+        #quizes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Adjust to fit your layout */
+        }
+        
+        #quizes a {
+            text-decoration: none;
+            color: #333;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            margin-left: 10px; /* Adjust spacing between logo and anchor tag */
+            text-align: center;
+        }
+        
+        #quizes .logo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 20px; /* Adjust spacing between logos */
+        }
+        
+        #quizes .logo img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 10px; /* Adjust spacing between logo and anchor tag */
+        }
+        body{
+            padding-bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <div style="margin-left: 50px;" onclick="location.href='home.html'">
+            <h1>Uday</h1>
+        </div>
+        <div style="display: flex; margin-top: 5px;">
+            <a href="index.html">
+                <h2>About me</h2>
+            </a>
+            <a href="articlespage.html">
+                <h2>My Articles</h2>
+            </a>
+            <a href="quizzezpage.html">
+                <h2>Quizzes</h2>
+            </a>
+        </div>
+    </div>
+
+    <div id="quizes">
+        <div class="logo">
+            <a href="quiz1.html" target="_blank"><img src="htmlcsslogo.png" alt="Logo 1"></a>
+            <a href="quiz1.html" target="_blank">Introduction to HTML and CSS</a>
+        </div>
+        <div class="logo">
+            <a href="quiz2.html" target="_blank"><img src="jslogo.png" alt="Logo 2"></a>
+            <a href="quiz2.html" target="_blank">Introduction to JavaScript</a>
+        </div>
+        <div class="logo">
+            <a href="quiz3.html" target="_blank"><img src="responsivewebsitelogo.png" alt="Logo 3" style=" scale: 1.5; margin-bottom: 60px ;"></a>
+            <a href="quiz3.html" target="_blank">Responsive Web Design</a>
+        </div>
+    </div>
+</body>
+</html>

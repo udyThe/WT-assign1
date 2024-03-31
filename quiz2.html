@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Introduction to Javascript</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik+Scribble&display=swap" rel="stylesheet">
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="common.css">
+    <style>
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #67C6E3;
+            text-align: center;
+
+        }
+
+        #subButton {
+            border-radius: 20px;
+            background-color: #5356FF;
+            color: aliceblue;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+
+<body id="quiz2main">
+    <div id="header">
+        <h1>QUizz TIME</h1>
+    </div>
+    <h2 style="margin-bottom: 50px;">Introduction to Javascript</h2>
+    <form id="quiz2">
+        <p>Question 1. What is JavaScript primarily used for in web development?</p>
+        <input type="radio" name="q1_answer" id="q1_option1" value="Server-side scripting">
+        <label for="q1_option1">a. &nbsp; Server-side scripting</label> <br>
+        <input type="radio" name="q1_answer" id="q1_option2" value="Client-side scripting">
+        <label for="q1_option2">b. &nbsp; Client-side scripting</label> <br>
+        <input type="radio" name="q1_answer" id="q1_option3" value="Database management">
+        <label for="q1_option3">c. &nbsp; Database management</label> <br>
+        <input type="radio" name="q1_answer" id="q1_option4" value="Markup language">
+        <label for="q1_option4">d. &nbsp; Markup language</label> <br> <br>
+
+        <p>Question 2. Which of the following is a feature of JavaScript?</p>
+        <input type="radio" name="q2_answer" id="q2_option1" value="Static typing">
+        <label for="q2_option1">a. &nbsp; Static typing</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option2" value="Synchronous programming">
+        <label for="q2_option2">b. &nbsp; Synchronous programming</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option3" value="Strongly-typed variables">
+        <label for="q2_option3">c. &nbsp; Strongly-typed variables</label> <br>
+        <input type="radio" name="q2_answer" id="q2_option4" value="Dynamic typing">
+        <label for="q2_option4">d. &nbsp; Dynamic typing</label> <br><br>
+
+        <p>Question 3. What does DOM stand for in JavaScript?</p>
+        <input type="radio" name="q3_answer" id="q3_option1" value="Document Object Model">
+        <label for="q3_option1">a. &nbsp; Document Object Model</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option2"value="Dynamic Object Manipulation">
+        <label for="q3_option2">b. &nbsp; Dynamic Object Manipulation</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option3" value="Document Orientation Model">
+        <label for="q3_option3">c. &nbsp; Document Orientation Model</label> <br>
+        <input type="radio" name="q3_answer" id="q3_option4" value="Data Object Management">
+        <label for="q3_option4">d. &nbsp; Data Object Management</label> <br> <br>
+
+        <p>Question 4. Which JavaScript feature allows for non-blocking execution of code?</p>
+        <input type="radio" name="q4_answer" id="q4_option1" value="Callbacks">
+        <label for="q4_option1">a. &nbsp; Callbacks</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option2" value="Synchronous functions">
+        <label for="q4_option2">b. &nbsp; Synchronous functions</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option3" value="Global variables">
+        <label for="q4_option3">c. &nbsp; Global variables</label> <br>
+        <input type="radio" name="q4_answer" id="q4_option4" value="Static typing">
+        <label for="q4_option4">d. &nbsp; Static typing</label> <br><br>
+
+        <p>Question 5. What is the purpose of AJAX in web development?</p>
+        <input type="radio" name="q5_answer" id="q5_option1" value="Asynchronous JavaScript and XML"> 
+        <label for="q5_option1">a. &nbsp; Asynchronous JavaScript and XML</label> <br>
+        <input type="radio" name="q5_answer" id="q5_option2" value='Automated JavaScript Execution'>
+        <label for="q5_option2">b. &nbsp; Automated JavaScript Execution</label> <br>
+        <input type="radio" name="q5_answer" id="q5_option3" value="Advanced JavaScript Extensions">
+        <label for="q5_option3">c. &nbsp; Advanced JavaScript Extensions </label> <br>
+        <input type="radio" name="q5_answer" id="q5_option4" value="Asynchronous JavaScript API">
+        <label for="q5_option4">d. &nbsp; Asynchronous JavaScript API</label> <br><br>
+
+        <p>Question 6. Which JavaScript framework is commonly used for building single-page applications?</p>
+        <input type="radio" name="q6_answer" id="q6_option1" value="jQuery">
+        <label for="q6_option1">a. &nbsp; jQuery</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option2" value="React">
+        <label for="q6_option2">b. &nbsp; React</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option3" value="PHP">
+        <label for="q6_option3">c. &nbsp; PHP</label> <br>
+        <input type="radio" name="q6_answer" id="q6_option4"value="Python">
+        <label for="q6_option4">d. &nbsp; Python</label> <br><br>
+
+        <p>Question 7. What is the term for validating user input in web forms using JavaScript?</p>
+        <input type="radio" name="q7_answer" id="q7_option1" value="Data encryption">
+        <label for="q7_option1">a. &nbsp; Data encryption</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option2" value="Form submission">
+        <label for="q7_option2">b. &nbsp; Form submission</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option3" value="Form validation">
+        <label for="q7_option3">c. &nbsp; Form validation</label> <br>
+        <input type="radio" name="q7_answer" id="q7_option4" value="Data manipulation">
+        <label for="q7_option4">d. &nbsp; Data manipulation</label> <br><br>
+
+        <p>Question 8. Which JavaScript feature allows for handling user interactions such as clicks and keypresses?</p>
+        <input type="radio" name="q8_answer" id="q8_option1" value="Event-driven programming">
+        <label for="q8_option1">a. &nbsp; Event-driven programming</label> <br>
+        <input type="radio" name="q8_answer" id="q8_option2" value="Conditional statements">
+        <label for="q8_option2">b. &nbsp; Conditional statements</label> <br>
+        <input type="radio" name="q8_answer" id="q8_option3" value="Looping constructs ">
+        <label for="q8_option3">c. &nbsp; Looping constructs </label> <br>
+        <input type="radio" name="q8_answer" id="q8_option4" value="Function calls">
+        <label for="q8_option4">d. &nbsp; Function calls</label> <br><br>
+
+        <p>Question 9. Which JavaScript function is commonly used to make asynchronous HTTP requests?</p>
+        <input type="radio" name="q9_answer" id="q9_option1" value="fetch()">
+        <label for="q9_option1">a. &nbsp; fetch()</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option2" value="get()">
+        <label for="q9_option2">b. &nbsp; get()</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option3" value="request()">
+        <label for="q9_option3">c. &nbsp; request()</label> <br>
+        <input type="radio" name="q9_answer" id="q9_option4" value="post()">
+        <label for="q9_option4">d. &nbsp; post()</label> <br><br>
+
+        <p>Question 10. What is the purpose of a JavaScript callback function?</p>
+        <input type="radio" name="q10_answer" id="q10_option1" value="To execute code synchronously">
+        <label for="q10_option1">a. &nbsp; To execute code synchronously</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option2" value="To handle user input in web forms">
+        <label for="q10_option2">b. &nbsp; To handle user input in web forms</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option3" value="To perform asynchronous tasks">
+        <label for="q10_option3">c. &nbsp; To perform asynchronous tasks</label> <br>
+        <input type="radio" name="q10_answer" id="q10_option4" value="To define event handlers for DOM elements">
+        <label for="q10_option4">d. &nbsp; To define event handlers for DOM elements</label>  <br>
+
+        <br><br><br>
+        <button type="submit" id="subButton">Check Answers</button>
+
+
+    </form>
+
+    <script>
+        document.getElementById('quiz2').addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            var main = document.getElementById('quiz2main');
+
+            var q1_selectedOption = document.querySelector('input[name="q1_answer"]:checked');
+            var q2_selectedOption = document.querySelector('input[name="q2_answer"]:checked');
+            var q3_selectedOption = document.querySelector('input[name="q3_answer"]:checked');
+            var q4_selectedOption = document.querySelector('input[name="q4_answer"]:checked');
+            var q5_selectedOption = document.querySelector('input[name="q5_answer"]:checked');
+            var q6_selectedOption = document.querySelector('input[name="q6_answer"]:checked');
+            var q7_selectedOption = document.querySelector('input[name="q7_answer"]:checked');
+            var q8_selectedOption = document.querySelector('input[name="q8_answer"]:checked');
+            var q9_selectedOption = document.querySelector('input[name="q9_answer"]:checked');
+            var q10_selectedOption = document.querySelector('input[name="q10_answer"]:checked');
+
+            if (q1_selectedOption && q2_selectedOption && q3_selectedOption && q4_selectedOption && q5_selectedOption && q6_selectedOption && q7_selectedOption && q8_selectedOption && q9_selectedOption && q10_selectedOption) {
+                var q1_answer = q1_selectedOption.value;
+                var q2_answer = q2_selectedOption.value;
+                var q3_answer = q3_selectedOption.value;
+                var q4_answer = q4_selectedOption.value;
+                var q5_answer = q5_selectedOption.value;
+                var q6_answer = q6_selectedOption.value;
+                var q7_answer = q7_selectedOption.value;
+                var q8_answer = q8_selectedOption.value;
+                var q9_answer = q9_selectedOption.value;
+                var q10_answer = q10_selectedOption.value;
+
+                var correctAnswers = 0;
+
+                if (q1_answer === "Client-side scripting") {
+                    correctAnswers++;
+                }
+                if (q2_answer === "Dynamic typing") {
+                    correctAnswers++;
+                }
+                if (q3_answer === "Document Object Model") {
+                    correctAnswers++;
+                }
+                if (q4_answer === "Callbacks") {
+                    correctAnswers++;
+                }
+                if (q5_answer === 'Asynchronous JavaScript and XML') {
+                    correctAnswers++;
+                }
+                if (q6_answer === "React") {
+                    correctAnswers++;
+                }
+                if (q7_answer === "Form validation") {
+                    correctAnswers++;
+                }
+                if (q8_answer === "Event-driven programming") {
+                    correctAnswers++;
+                }
+                if (q9_answer === "fetch()") {
+                    correctAnswers++;
+                }
+                if (q10_answer === "To define event handlers for DOM elements") {
+                    correctAnswers++;
+                }
+
+                var message = "<h1>Correct Answers:</h1> <br>";
+                message += "1. What is JavaScript primarily used for in web development? -  <br> &emsp;Your Answer: " + q1_answer + " <br> &emsp; Correct Answer: Client-side scripting<br> <br>";
+                message += "2. Which of the following is a feature of JavaScript? -  <br> &emsp; Your Answer: " + q2_answer + " <br> &emsp; Correct Answer: Dynamic typing<br><br>";
+                message += "3. What does DOM stand for in JavaScript? -  <br> &emsp; Your Answer: " + q3_answer + " <br> &emsp; Correct Answer: Document Object Model<br><br>";
+                message += "4. Which JavaScript feature allows for non-blocking execution of code? -  <br> &emsp; Your Answer: " + q4_answer + " <br> &emsp; Correct Answer: Callbacks<br><br>";
+                message += "5. What is the purpose of AJAX in web development? -  <br> &emsp; Your Answer: " + q5_answer + " <br> &emsp; Correct Answer: Asynchronous JavaScript and XML<br><br>";
+                message += "6. Which JavaScript framework is commonly used for building single-page applications? -  <br> &emsp; Your Answer: " + q6_answer + " <br> &emsp; Correct Answer: React <br><br>";
+                message += "7. What is the term for validating user input in web forms using JavaScript? -  <br> &emsp; Your Answer: " + q7_answer + " <br> &emsp; Correct Answer: Form validation <br> <br>";
+                message += "8. Which JavaScript feature allows for handling user interactions such as clicks and keypresses? -  <br> &emsp; Your Answer: " + q8_answer + " <br> &emsp; Correct Answer: Event-driven programming <br> <br>";
+                message += "9. Which JavaScript function is commonly used to make asynchronous HTTP requests? -  <br> &emsp; Your Answer: " + q9_answer + " <br> &emsp; Correct Answer: fetch()<br><br>";
+                message += "10. What is the purpose of a JavaScript callback function? -  <br> &emsp; Your Answer: " + q10_answer + " <br> &emsp; Correct Answer: To define event handlers for DOM elements<br><br>";
+                message += "<br>Your Score: " + correctAnswers + "/10";
+
+                main.innerHTML = (message);
+
+            } else {
+                alert("Please answer all questions!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
